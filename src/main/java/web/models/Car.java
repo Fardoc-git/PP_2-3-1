@@ -10,7 +10,6 @@ public class Car {
         this.id = id;
         this.model = model;
         this.type = type;
-
     }
 
     public int getId() {
