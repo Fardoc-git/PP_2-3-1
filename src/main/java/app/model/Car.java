@@ -1,10 +1,24 @@
-package web.models;
+/*
+package app.model;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "cars")
 public class Car {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private int id;
+
+    @Column(name = "model")
     private String model;
+
+    @Column(name = "type")
     private String type;
+
+    public Car() {}
 
     public Car(int id, String model, String type) {
         this.id = id;
@@ -41,3 +55,4 @@ public class Car {
         return "%d %s %s".formatted(getId(), getModel(), getType());
     }
 }
+*/

@@ -1,7 +1,8 @@
-package web.dao;
+/*
+package app.dao;
 
 import org.springframework.stereotype.Component;
-import web.models.Car;
+import app.model.Car;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,3 +26,4 @@ public class CarDAO {
         return cars.stream().limit(count).toList();
     }
 }
+*/
