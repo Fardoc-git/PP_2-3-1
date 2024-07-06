@@ -44,7 +44,7 @@ public class BDConfig {
    public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
       LocalContainerEntityManagerFactoryBean entityManagerFactory = new LocalContainerEntityManagerFactoryBean();
       entityManagerFactory.setDataSource(getDataSource());
-      entityManagerFactory.setPackagesToScan("db.package");
+      entityManagerFactory.setPackagesToScan("app");
 
       Properties props = new Properties();
       props.setProperty("hibernate.show_sql", env.getProperty("hibernate.show_sql"));

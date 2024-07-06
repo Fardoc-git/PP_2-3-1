@@ -3,74 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Users</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f8f9fa;
-            margin: 20px;
-            padding: 0;
-        }
-        h1 {
-            text-align: center;
-            color: #343a40;
-            margin-bottom: 10px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
-        }
-        th, td {
-            padding: 12px;
-            border: 1px solid #000;
-
-            text-align: left;
-        }
-        th {
-            background-color: #007bff;
-            color: #fff;
-            font-weight: bold;
-        }
-        td {
-            background-color: #fff;
-        }
-        form {
-            margin-top: 20px;
-            padding: 20px;
-            border: 1px solid #ced4da;
-            border-radius: 4px;
-            background-color: #f8f9fa;
-        }
-        label {
-            display: block;
-            margin-bottom: 8px;
-            color: #495057;
-        }
-        input[type="text"], input[type="submit"] {
-            width: calc(100% - 12px);
-            padding: 8px;
-            margin-bottom: 10px;
-            border: 1px solid #ced4da;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-        input[type="submit"] {
-            background-color: #28a745;
-            color: #fff;
-            cursor: pointer;
-        }
-        input[type="submit"]:hover {
-            background-color: #218838;
-        }
-    </style>
 
 </head>
 <body>
@@ -97,31 +29,31 @@
     </table>
 
     <form method="post" action="/addUser">
-        <label for="name_add" >User Name</label>
-        <input name="name" type="text" id="name_add">
+        <label for="name" >User Name</label>
+        <input name="name" type="text" id="name">
         <br>
-        <label for="lastName">User LastName</label>
-        <input name="lastName" type="text" id="lastName">
+        <label for="last_name">User LastName</label>
+        <input name="lastName" type="text" id="last_name">
         <br>
         <input type="submit" value="Add User">
     </form>
 
     <form method="post" action="/deleteUser">
-        <label for="id_delete" >User ID</label>
-        <input name="id" type="text" id="id_delete">
+        <label for="delete" >User ID</label>
+        <input name="id" type="text" id="delete">
         <br>
         <input type="submit" value="Delete User">
     </form>
 
     <form method="post" action="/updateUser">
-        <label for="id_update" >User ID</label>
-        <input name="id" type="text" id="id_update">
+        <label for="update_id" >User ID</label>
+        <input name="id" type="text" id="update_id">
         <br>
-        <label for="name_update" >User Name</label>
-        <input name="name" type="text" id="name_update">
+        <label for="update_name" >User Name</label>
+        <input name="name" type="text" id="update_name">
         <br>
-        <label for="lastName_update">User lastName</label>
-        <input name="lastName" type="text" id="lastName_update">
+        <label for="update_lastName">User lastName</label>
+        <input name="lastName" type="text" id="update_lastName">
         <br>
         <input type="submit" value="Update User">
     </form>
