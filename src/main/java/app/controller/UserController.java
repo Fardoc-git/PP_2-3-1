@@ -35,7 +35,7 @@ public class UserController {
     }
 
     @PostMapping("/deleteUser")
-    public String deleteUser(@RequestParam("id") Long id) {
+    public String deleteUser(@RequestParam("id") int id) {
         User user = userService.read(id);
         if(user != null) {
             userService.delete(user);

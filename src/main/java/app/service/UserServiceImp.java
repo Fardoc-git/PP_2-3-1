@@ -30,7 +30,7 @@ public class UserServiceImp implements UserService{
 
     @Transactional
     @Override
-    public User read(Long id) {
+    public User read(int id) {
         return userDAO.read(id);
     }
 

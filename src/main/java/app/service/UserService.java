@@ -8,7 +8,7 @@ public interface UserService {
 
     void create(User user);
 
-    User read(Long id);
+    User read(int id);
 
     void update(User user);
 
