@@ -1,7 +1,6 @@
 package app.service;
 
-import app.dao.UserDAO;
-import app.dao.UserDAOImp;
+import app.dao.UserDao;
 import app.model.User;
 import java.util.List;
 
@@ -13,10 +12,10 @@ import javax.transaction.Transactional;
 @Service
 public class UserServiceImp implements UserService{
 
-    private final UserDAO userDAO;
+    private final UserDao userDAO;
 
     @Autowired
-    public UserServiceImp(UserDAO userDAO) {
+    public UserServiceImp(UserDao userDAO) {
         this.userDAO = userDAO;
 
 

@@ -7,7 +7,7 @@ import app.model.User;
 import java.util.List;
 
 @Repository
-public class UserDAOImp implements UserDAO {
+public class UserDaoImp implements UserDao {
 
     @PersistenceContext
     private EntityManager entityManager;
