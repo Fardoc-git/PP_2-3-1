@@ -27,7 +27,6 @@ public class UserServiceImp implements UserService{
         userDAO.create(user);
     }
 
-    @Transactional
     @Override
     public User read(int id) {
         return userDAO.read(id);
@@ -45,7 +44,6 @@ public class UserServiceImp implements UserService{
         userDAO.delete(user);
     }
 
-    @Transactional
     @Override
     public List<User> getUserList() {
         return userDAO.getUserList();
